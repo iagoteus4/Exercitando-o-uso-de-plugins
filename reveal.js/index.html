@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		
+		<title>reveal.js</title>
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/black.css">
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section><h1>Addianto</h1></section>
+				<section><h1>Tutorial sobre plugins</h1></section>
+				<section>
+					<p class="fragment fade-out">Instalar e usar o básico de</p>
+					<p class="fragment fade-in-then-out highlight-red">reveal.js</p>
+					<p class="fragment fade-up">Vamos lá</p>
+				</section>
+				<section>
+					<p class="fragment fade-up"><h1>Requisitos</h1></p>
+					<pre>
+						<p class="fragment fade-in-then-out highlight-red fade-up" style="font-size: 60px;">NodeJS</p>
+						<p class="fragment fade-up">Importação
+							<code data-trim data-noescape>
+								git clone https://github.com/hakimel/reveal.js.git
+							</code>
+							<p class="fragment fade-up">Instalação
+								<code data-trim data-noescape>
+									cd reveal.js
+									npm install
+								</code>
+							</p>
+						</p>
+					</pre>
+				</section>
+				<section><a href="https://revealjs.com/">Documentação do Reveal.js</a></section>
+			</div>
+		</div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+			});
+		</script>
+	</body>
+</html>

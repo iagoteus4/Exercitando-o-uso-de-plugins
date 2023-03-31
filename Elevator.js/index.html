@@ -1,0 +1,59 @@
+<!doctype html>
+<html>
+    <head>
+        <title> Elevator.js </title>
+        <link href='./css/styles.css' rel='stylesheet'>
+        <link rel="stylesheet" type="text/css" href="guides/demo/screen.css">
+	    <link rel="stylesheet" type="text/css" href="guides/demo/guides.css">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        
+        <img src="https://imagensemoldes.com.br/wp-content/uploads/2020/06/Cartoon-Pr%C3%A9dio-PNG.png" id="figura1">
+        
+        <img src="https://ingaarcondicionado.com.br/wp-content/uploads/2020/09/predios2-1024x625.png" id="figura2">
+        
+        <img src="https://souserac.com/assets/images/predio-souserac%20(1).png" id="figura3">
+
+        <img src="https://img.freepik.com/icones-gratis/predio-comercial_318-751245.jpg" id="figura4">
+        
+        <img src="https://static.vecteezy.com/system/resources/previews/010/892/378/non_2x/3d-appartement-building-png.png" id="figura5">
+        
+        <img src="https://img.freepik.com/icones-gratis/predio_318-463415.jpg?w=2000" id="figura6">
+        
+        <img src="https://img.freepik.com/icones-gratis/hotel_318-463291.jpg" id="figura7">
+        
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+	    <script type="text/javascript" src="guides/demo/guides.min.js"></script>
+        
+	    <script type="text/javascript">
+            $('#figura2').guides({
+                guides: [{
+                    html: 'O que iremos fazer com o Elevator.js ? Técnicamente faremos transições de rolamento na página.'
+                }, {
+                    element: $('#figura1'),
+                    html: 'Iremos fazer que ao clicar nesta figura'
+                }, {
+                    element: $('#figura7'),
+                    html: 'Ela nos leve até esta outra figura'
+                }]
+            });
+            </script>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="guides/demo/guides.min.js"></script>
+
+<!-- <script>
+    
+    let elevator = new Elevator({
+        element: document.getElementById('andar1'),
+        targetElement: document.getElementById('andar7'),
+    });
+    
+</script> -->
+<script type="text/javascript" src="elevator.js"></script>
+<script type="text/javascript" src="app.js"></script>
+</body>
+</html>
